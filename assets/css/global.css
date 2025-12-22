@@ -166,6 +166,28 @@ img {
     color: white;
 }
 
+/* Background Utilities */
+.bg-dark {
+    background-color: var(--color-bg-dark);
+}
+
+.bg-deep {
+    background-color: var(--color-bg-light);
+}
+
+.bg-soft {
+    background-color: var(--color-bg-white);
+}
+
+.border-top {
+    border-top: 1px solid rgba(0, 229, 255, 0.1);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0, 229, 255, 0.1);
+}
+
+
 .sr-only {
     position: absolute;
     width: 1px;

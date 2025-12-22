@@ -97,3 +97,284 @@
     display: none;
     /* Hidden on desktop by default */
 }
+
+/* --- Shared Visual Components --- */
+
+/* 1. Section Header (Centered title + description) */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.22rem;
+    margin-bottom: 1rem;
+}
+
+/* 2. Grid Layout (Responsive card container) */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* 3. Info Card (Icon + Title + Description) */
+.info-card {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-white);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.1), 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: var(--transition-base);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.3), 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 229, 255, 0.3);
+}
+
+.info-card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.2));
+}
+
+.info-card h3 {
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+/* 4. Split Layout (Image + Text split) */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+}
+
+.split-layout.reverse {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.split-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.2);
+    filter: brightness(0.9);
+    transition: all 0.4s ease;
+}
+
+.split-layout:hover .split-image img {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(0, 229, 255, 0.4);
+}
+
+.split-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.split-text h3 {
+    color: var(--color-secondary);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+/* Responsiveness for Shared Components */
+@media (max-width: 992px) {
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .split-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .split-layout.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .split-image {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-layout {
+        gap: 1.5rem;
+    }
+}
+
+/* --- Hero Component --- */
+.hero {
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, var(--color-bg-dark) 0%, var(--color-bg-light) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, rgba(0, 10, 69, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #ffffff, var(--color-secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    color: var(--color-text-light);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.3), 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    transition: all 0.5s ease;
+}
+
+.hero-image:hover img {
+    transform: translateY(-8px);
+    box-shadow: 0 0 50px rgba(0, 229, 255, 0.5), 0 20px 50px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 229, 255, 0.4);
+}
+
+/* Component Overrides & Extras */
+.info-card a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.info-card a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero p {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 140px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image {
+        max-width: 350px;
+    }
+
+    /* Mobiles: Two cards per row for grids */
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .info-card {
+        padding: 1rem;
+        border-radius: var(--radius-md);
+    }
+
+    .info-card-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .info-card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .info-card p {
+        line-height: 1.3;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

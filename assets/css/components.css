@@ -21,7 +21,6 @@
     letter-spacing: 0.5px;
 }
 
-/* Shine Effect Animation (Pulse from center) */
 .btn::after {
     content: '';
     position: absolute;
@@ -37,18 +36,6 @@
 
 .btn:hover::after {
     animation: shine 0.8s infinite;
-}
-
-@keyframes shine {
-    0% {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 0.8;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1.5);
-        opacity: 0;
-    }
 }
 
 .btn-primary {
@@ -77,30 +64,15 @@
     transform: translateY(-2px);
 }
 
-@keyframes glow-pulse {
-    0% {
-        box-shadow: 0 0 5px rgba(0, 229, 255, 0.2);
-    }
-
-    50% {
-        box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
-    }
-
-    100% {
-        box-shadow: 0 0 5px rgba(0, 229, 255, 0.2);
-    }
-}
-
-/* Shared Unique classes for floating buttons (Visibility control) */
+/* Floating Actions visibility control */
 .btn-whatsapp-float,
 .btn-call-float {
     display: none;
-    /* Hidden on desktop by default */
 }
 
 /* --- Shared Visual Components --- */
 
-/* 1. Section Header (Centered title + description) */
+/* 1. Section Header */
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -111,15 +83,28 @@
     margin-bottom: 1rem;
 }
 
-/* 2. Grid Layout (Responsive card container) */
+/* 2. Grid System */
 .grid-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
-/* 3. Info Card (Icon + Title + Description) */
+.grid-centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.grid-centered>.info-card {
+    flex: 1 1 220px;
+    max-width: 400px;
+}
+
+/* 3. Info Card */
 .info-card {
     padding: 2rem;
     border-radius: var(--radius-lg);
@@ -151,7 +136,24 @@
     margin-bottom: 1.2rem;
 }
 
-/* 4. Split Layout (Image + Text split) */
+.info-card a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.info-card a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* 4. Split Layout */
 .split-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,34 +193,7 @@
     font-weight: 700;
 }
 
-/* Responsiveness for Shared Components */
-@media (max-width: 992px) {
-    .section-header {
-        margin-bottom: 3rem;
-    }
-
-    .split-layout {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-
-    .split-layout.reverse {
-        grid-template-columns: 1fr;
-    }
-
-    .split-image {
-        order: -1;
-        display: flex;
-        justify-content: center;
-    }
-
-    .grid-layout {
-        gap: 1.5rem;
-    }
-}
-
-/* --- Hero Component --- */
+/* 5. Hero Component */
 .hero {
     padding: 100px 0 80px;
     background: linear-gradient(135deg, var(--color-bg-dark) 0%, var(--color-bg-light) 100%);
@@ -284,25 +259,38 @@
     border-color: rgba(0, 229, 255, 0.4);
 }
 
-/* Component Overrides & Extras */
-.info-card a {
-    font-size: 1.3rem;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 1rem;
+/* --- Media Queries --- */
+
+/* Breakpoint: Mid-Size Adjustment (600px - 1200px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+    .hero {
+        padding-top: 180px;
+    }
 }
 
-.info-card a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
+/* Breakpoint: Tablet (992px) */
 @media (max-width: 992px) {
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .split-layout,
+    .split-layout.reverse {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .split-image {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid-layout {
+        gap: 1.5rem;
+    }
+
     .hero-grid {
         display: flex;
         flex-direction: column;
@@ -330,6 +318,7 @@
     }
 }
 
+/* Breakpoint: Mobile (600px) */
 @media (max-width: 600px) {
     .hero {
         padding: 140px 0 60px;
@@ -348,10 +337,27 @@
         max-width: 350px;
     }
 
-    /* Mobiles: Two cards per row for grids */
     .grid-layout {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
+    }
+
+    .grid-layout.grid-mobile-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-centered {
+        gap: 12px;
+    }
+
+    .grid-centered>.info-card {
+        flex: 1 1 calc(50% - 12px);
+        max-width: none;
+        min-width: 140px;
+    }
+
+    .grid-centered.grid-mobile-1>.info-card {
+        flex: 1 1 100%;
     }
 
     .info-card {

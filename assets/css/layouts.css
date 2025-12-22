@@ -23,51 +23,15 @@
 }
 
 .logo a {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     gap: 0.8rem;
     text-decoration: none;
-
-    /* Hyper-Intense Color Sweep Shine */
-    background: linear-gradient(to right,
-            var(--color-secondary) 0%,
-            var(--color-primary) 25%,
-            var(--color-secondary) 50%,
-            var(--color-primary) 75%,
-            var(--color-secondary) 100%);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textShine 3.5s linear infinite;
-}
-
-.logo a span,
-.footer-brand span {
-    color: inherit;
-    -webkit-text-fill-color: inherit;
-}
-
-@keyframes textShine {
-    0% {
-        background-position: -100% center;
-    }
-
-    100% {
-        background-position: 100% center;
-    }
 }
 
 .logo-img {
     height: 30px;
     width: auto;
-}
-
-.logo span {
-    color: inherit;
 }
 
 .header-contacts {
@@ -110,7 +74,7 @@
     color: var(--color-secondary);
 }
 
-/* Header Contextual Buttons (Call/WS) */
+/* Header Contextual Buttons */
 .btn-sm {
     display: inline-flex;
     align-items: center;
@@ -160,34 +124,6 @@
     color: var(--color-primary-dark) !important;
 }
 
-/* Responsive header (Mid-size) */
-@media (min-width: 600px) and (max-width: 1200px) {
-    .site-header {
-        height: auto;
-        padding: 15px 0;
-    }
-
-    .nav-container {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .header-contacts {
-        margin: 0;
-    }
-
-    .main-nav {
-        width: 100%;
-        margin-top: 15px;
-        padding-top: 10px;
-    }
-
-    .main-nav ul {
-        justify-content: center;
-        gap: 1.5rem;
-    }
-}
-
 /* --- Footer --- */
 .site-footer {
     background-color: var(--color-primary-dark);
@@ -203,37 +139,9 @@
     margin-bottom: var(--spacing-lg);
 }
 
-.footer-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    text-decoration: none;
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-
-    /* Hyper-Intense Color Sweep Shine */
-    background: linear-gradient(to right,
-            var(--color-secondary) 0%,
-            var(--color-primary) 25%,
-            var(--color-secondary) 50%,
-            var(--color-primary) 75%,
-            var(--color-secondary) 100%);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textShine 3.5s linear infinite;
-}
-
 .footer-brand img {
     height: 45px;
     width: auto;
-}
-
-.footer-brand .text-secondary {
-    color: var(--color-secondary);
 }
 
 .footer-col p {
@@ -285,7 +193,7 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* --- Floating Actions (Mobile) --- */
+/* --- Floating Actions (Mobile Only) --- */
 .floating-actions {
     position: fixed;
     bottom: 0;
@@ -293,6 +201,35 @@
     width: 100%;
     z-index: 2000;
     display: none;
+}
+
+/* --- Media Queries --- */
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .site-header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header-contacts {
+        margin: 0;
+    }
+
+    .main-nav {
+        width: 100%;
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -316,24 +253,14 @@
     }
 
     .main-nav {
-        overflow-x: visible;
-        white-space: normal;
-        margin-left: 0;
         width: 100%;
-        padding-bottom: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
         padding-top: 5px;
-    }
-
-    .main-nav::-webkit-scrollbar {
-        display: none;
     }
 
     .main-nav ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
-        padding-right: 0;
     }
 
     .main-nav a {
@@ -361,12 +288,11 @@
         font-size: 1.2rem;
     }
 
+    /* Floating Actions Mobile Show */
     .floating-actions {
         display: flex;
         gap: 12px;
         padding: 10px 15px;
-        background-color: transparent;
-        border-top: none;
     }
 
     .btn-float-whatsapp,
@@ -415,7 +341,6 @@
 
     .btn-float-whatsapp img,
     .btn-float-call img {
-        filter: none !important;
         width: 20px;
         height: 20px;
     }

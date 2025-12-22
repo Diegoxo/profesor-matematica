@@ -1,4 +1,4 @@
----
+﻿---
 trigger: always_on
 ---
 
@@ -115,5 +115,8 @@ trigger: always_on
 └── assets/
     ├── font/
     ├── css/
+    │   ├── global.css
+    │   ├── components.css
+    │   └── layouts.css
     ├── js/
     └── img/

@@ -1,4 +1,4 @@
----
+﻿---
 trigger: always_on
 ---
 
@@ -6,13 +6,6 @@ trigger: always_on
 
 | Archivo CSS       | Elementos a los cuales define                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
-| **global.css**    | Reset, tipografías, colores globales, grid general, espaciados, enlaces, encabezados y utilidades universales.     |
-| **components.css**| Estilos para header, footer, botones, tarjetas, formularios, navbars, modales, tablas y componentes reutilizables. |
-| **inicio.css**    | Estilos para la página de inicio.                                                                                  |
-| **tutorias.css**  | Estilos para las páginas dentro de la carpeta de tutorías.                                                         |
-| **profesor.css**  | Estilos para las páginas dentro de la carpeta de profesor.                                                         |
-| **ciudades.css**  | Estilos para las páginas dentro de la carpeta de ciudades.                                                         |
-| **clases.css**    | Estilos para las páginas dentro de la carpeta de clases.                                                           |
-| **asesorias.css** | Estilos para las páginas dentro de la carpeta de asesorías.                                                        |
-| **materias.css**  | Estilos para las páginas dentro de la carpeta de materias.                                                         |
-| **otras.css**     | Estilos para las páginas dentro del resto de las otras carpetas.                                                   |
+| **global.css**    | Reset, tipografías, colores generales, utilidades de fondo y bordes, y estilos base de elementos.                  |
+| **components.css**| El corazón visual del sitio. Contiene Heros, Grillas de tarjetas, Bloques divididos (Split layouts) y botones.     |
+| **layouts.css**   | Estilos para la estructura fija: Header (Navegación), Footer y los botones flotantes de acción móvil.              |

@@ -19,7 +19,6 @@ trigger: always_on
 - El sitio web, debe ser apto para móviles.
 - Se debe incluir un sitemap.xml actualizado.
 - El sitio debe incluir un archivo robots.txt correctamente configurado.
-- Las páginas internas deben incluir breadcrumbs hechos con HTML.
 - El sitio web debe tener el archivo .htaccess, para las URLs limpias.
 - Los tiempos de carga deben ser lo más rápido posibles.
 - Todas las páginas deben tener un título único y una meta descripción optimizada para SEO.

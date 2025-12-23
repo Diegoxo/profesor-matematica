@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://profesordematematica.com.co/sitemap.xml

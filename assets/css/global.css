@@ -290,16 +290,51 @@ img {
 }
 
 /* Utility Classes for Spacing & Layout */
-.mt-1 { margin-top: 1rem; }
-.mt-2 { margin-top: 2rem; }
-.mt-3 { margin-top: 3rem; }
-.mt-4 { margin-top: 4rem; }
-.mb-1 { margin-bottom: 1rem; }
-.mb-2 { margin-bottom: 2rem; }
+.mt-1 {
+    margin-top: 1rem;
+}
 
-.opacity-9 { opacity: 0.9; }
-.text-left { text-align: left; }
-.list-none { list-style: none; }
-.flex-items-center { display: flex; align-items: center; }
-.gap-1 { gap: 1rem; }
-.gap-2 { gap: 2rem; }
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.opacity-9 {
+    opacity: 0.9;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.flex-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}

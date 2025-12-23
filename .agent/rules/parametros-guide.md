@@ -25,6 +25,7 @@ trigger: always_on
 - Todas las páginas deben tener un título único y una meta descripción optimizada para SEO.
 - Todas las paginas deben tener una meta descripción orientada a SEO.
 - El sitio web debe tener implementado rich snippets todas las paginas que sea importante.
+- Los nombres de las imagenes deber estar relacionadas con la pagina en la que estan.
 
 # Requerimientos de UI
 - El sitio debe utilizar una paleta basada en azules.
@@ -42,4 +43,3 @@ trigger: always_on
 - El header de las páginas debe quedarse fijo, no importa si se baja la página.
 - Al tocar el logo de WhatsApp o darle clic debe redirigir a una conversación en WhatsApp.
 - El contenido debe transmitir confianza y experiencia.
-

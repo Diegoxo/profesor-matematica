@@ -140,6 +140,42 @@
     color: var(--color-primary-dark) !important;
 }
 
+/* --- Breadcrumbs --- */
+.breadcrumb-container {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumb-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+    padding: 0;
+}
+
+.breadcrumb-list a {
+    color: var(--color-secondary);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb-list a:hover {
+    color: white;
+}
+
+.breadcrumb-separator {
+    color: var(--color-text-light);
+    font-size: 0.75rem;
+}
+
+.breadcrumb-current {
+    color: white;
+    font-weight: 500;
+}
+
 /* --- Footer --- */
 .site-footer {
     background-color: var(--color-primary-dark);

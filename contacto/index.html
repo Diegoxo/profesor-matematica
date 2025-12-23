@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Agenda tu Clase Hoy | Profesor de Matemática</title>
+    <meta name="description"
+        content="Contáctanos para agendar tu tutoría o asesoría académica. WhatsApp, teléfono y atención personalizada en Colombia. ¡Estamos listos para ayudarte!">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contacto",
+        "item": "https://profesordematematica.com.co/contacto/"
+      }]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20agendar%20una%20clase"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero bg-deep">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Contacta ya mismo</h1>
+                    <p>Estamos disponibles para resolver tus dudas y agendar tus sesiones académicas. Elige el medio que
+                        prefieras y recibe atención inmediata.</p>
+                    <div class="header-contacts-hero">
+                        <a href="https://wa.me/573105986491" class="btn btn-glow mb-2" target="_blank">Escríbenos por
+                            WhatsApp</a>
+                        <br>
+                        <a href="tel:3105986491" class="btn btn-secondary">Llamar Ahora (310 598 6491)</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/contacto-atencion-personalizada-colombia.avif"
+                        alt="Persona brindando atención al cliente y soporte académico">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Formulario y Datos de Contacto -->
+        <section class="section bg-soft">
+            <div class="container split-layout">
+                <div class="split-text">
+                    <div class="section-header text-left">
+                        <h2>Envíanos un mensaje</h2>
+                        <p>Completa el formulario y te responderemos en el menor tiempo posible.</p>
+                    </div>
+
+                    <!-- Placeholder para Formulario -->
+                    <form action="#" method="POST" class="info-card card-glass" style="max-width: 500px;">
+                        <div style="margin-bottom: 15px;">
+                            <label for="nombre" style="display: block; margin-bottom: 5px;">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required
+                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="celular" style="display: block; margin-bottom: 5px;">Celular / WhatsApp</label>
+                            <input type="tel" id="celular" name="celular" required
+                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="materia" style="display: block; margin-bottom: 5px;">Materia de Interés</label>
+                            <select id="materia" name="materia"
+                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);">
+                                <option value="matematica">Matemáticas</option>
+                                <option value="estadistica">Estadística</option>
+                                <option value="excel">Excel</option>
+                                <option value="otros">Otras / No listado</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="mensaje" style="display: block; margin-bottom: 5px;">Cuéntanos tu
+                                necesidad</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-glow" style="width: 100%;">Enviar
+                            Mensaje</button>
+                    </form>
+                </div>
+
+                <div class="split-image">
+                    <div class="info-card bg-deep text-white">
+                        <h3>Información General</h3>
+                        <ul class="footer-links mb-4">
+                            <li>📍 <strong>Ubicación:</strong> Cra 48 # 46-08, Itagüí, Antioquia</li>
+                            <li>📞 <strong>Teléfono:</strong> 310 598 6491</li>
+                            <li>📧 <strong>Consultas:</strong> Contacto vía WhatsApp preferiblemente</li>
+                        </ul>
+
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 7:00 AM - 9:00 PM</p>
+                        <p>Sábados: 8:00 AM - 5:00 PM</p>
+                        <p>Domingos y Festivos: Previo acuerdo para emergencias académicas.</p>
+                    </div>
+
+                    <!-- Mapa Dinámico Placeholder -->
+                    <div class="mt-4"
+                        style="width: 100%; height: 250px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <iframe width="100%" height="100%" frameborder="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-75.6133%2C6.1688%2C-75.5933%2C6.1888&amp;layer=mapnik&amp;marker=6.1788%2C-75.6033"
+                            style="border: 1px solid var(--color-border); filter: grayscale(100%) invert(100%) brightness(95%);"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Redes y Confianza -->
+        <section class="section bg-dark border-top">
+            <div class="container text-center">
+                <h2>Resolución Garantizada</h2>
+                <p>Nuestra compromiso es brindarte la mejor experiencia educativa desde el primer contacto. No dudes en
+                    consultarnos cualquier inquietud.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="./">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call" aria-label="Llamar ahora">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> 310 598 6491
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20agendar%20una%20clase" class="btn-float-whatsapp"
+            target="_blank" aria-label="Chat en WhatsApp">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

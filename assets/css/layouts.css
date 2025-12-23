@@ -104,6 +104,22 @@
     box-shadow: 0 0 12px rgba(37, 211, 102, 0.3);
 }
 
+/* Contact Icons */
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.contact-icon-invert {
+    filter: invert(1);
+}
+
+.contact-icon-lg {
+    width: 24px;
+    height: 24px;
+}
+
 .btn-call-header::after,
 .btn-whatsapp-header::after {
     content: '';

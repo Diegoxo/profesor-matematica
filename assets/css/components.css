@@ -176,7 +176,29 @@
     z-index: 1;
 }
 
-/* 4. Split Layout */
+/* 4. Checkmarks List */
+.check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.check-list .check-icon {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+/* 5. Split Layout */
 .split-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,0 +1,312 @@
+/** Globales **/
+
+html {
+    box-sizing: border-box;
+    font-size: 120%;
+    color: rgb(134, 105, 105);
+
+  }
+  *, *:before, *:after {
+        box-sizing: inherit;
+  }
+
+  
+  header {
+    background-color:rgb(225, 241, 255);
+    padding: 2rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    font-weight: bold;
+
+  }
+
+  nav {
+    display: grid;
+  }
+
+  nav a {
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    background-color: #4e72bb;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  nav a:hover {
+    background-color: #0a2d75;
+  }
+
+  main {
+   background-color: rgb(255, 255, 255)
+  }
+
+  h2 {
+
+    padding-top: 2rem;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  footer {
+    background-color:rgb(225, 241, 255);
+    margin-top: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  
+  }
+
+  form {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+
+
+  fieldset {
+    background-color:rgb(225, 241, 255);
+    border-style: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  label {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  input {
+    width: 20rem;
+    height: 2rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    
+  }
+
+
+  textarea {
+    width: 20rem;
+    height: 10rem;
+    resize: none;
+    border-style: none;
+    border-radius: 0.2rem;
+  }
+
+  .enviar {
+    margin-top: 2rem;
+    background-color:mediumorchid;
+    color: #fff;
+  }
+
+  .enviar:hover{
+    background-color:#25d366;
+  }
+
+  .label-titulo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+
+  
+figure {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+
+ }
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+li {
+  padding: 0.5rem 2rem;
+  text-align: justify;
+  list-style: none;
+}
+
+
+.descripcion {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+
+.telefono {
+  font-size: 230%;
+  font-weight: bold;
+  font-family: serif;
+  text-decoration: none;
+}
+
+
+.whatsapp {
+  width: 4%;
+  height: auto;
+}
+.whatsapp-footer {
+  width: 2%;
+  height: auto;
+}
+
+.texto-header {
+  font-size: 120%;
+  line-height: 1.5;
+}
+
+.servicios {
+margin-left: 15%;
+margin-right: 15%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+background-color: rgb(225, 241, 255);
+}
+
+.servicios p {
+text-align: justify;
+}
+
+.materia {
+
+width: 100%;
+padding: 0;
+
+}
+
+
+/* Estilo para boton flotante de WhatsApp */
+.float{ 
+	position:fixed;
+	width:450px;
+	height:60px;
+  top:0px;
+  left: 50%;
+  transform: translateX(-50%);
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  
+}
+
+/* Estilo para boton flotante de WhatsApp */
+.float:hover {
+	  text-decoration: none;
+	  color: #25d366;
+  	background-color:#fff;
+}
+
+/* Estilo para boton flotante de WhatsApp */
+.my-float{
+  font-size: 50px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+.actual-url {
+  background-color:cadetblue;
+}
+
+  
+
+/* Para celulares*/
+  @media (max-width: 780px) {
+
+    html {
+      font-size: 80%;
+    }
+    header {
+      display: block;
+    }
+
+    h1 {
+      margin: 0 0;
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    nav a {
+      font-size:20px;
+    }
+
+    h2 {
+      margin: 0 1rem;
+      font-size: 200%;
+    }
+
+    h3 {
+      font-size: 200%;
+    }
+
+    body p {
+      font-size: 150%;
+    }
+
+    body li {
+      font-size: 150%;
+    }
+
+
+    .whatsapp {
+      width: 8%;
+      height: auto;
+    }
+    .whatsapp-footer {
+      width: 8%;
+      height: auto;
+    }
+
+    .servicios {
+      margin-left: 5%;
+      margin-right: 5%;
+      display: block;
+      background-color: rgb(225, 241, 255);
+     }
+     .descripcion {
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: justify;
+      font-size: 1.5rem;
+    }
+
+     .float{ 
+      width:100px;
+      left: 85%;
+      top: 75%;
+
+    }
+
+
+    
+
+
+  }

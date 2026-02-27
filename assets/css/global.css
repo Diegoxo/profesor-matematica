@@ -1,28 +1,22 @@
 /* assets/css/global.css */
 
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    /* Color Palette - Premium Blues */
+    /* ... (previous colors remain) ... */
     --color-primary: #0038ff;
-    /* Azul más fuerte y vibrante */
     --color-primary-dark: #000a45;
     --color-secondary: #00e5ff;
-    /* Cyan vibrante */
     --color-accent: #2b6cb0;
 
     --color-text-main: #e6f1ff;
-    /* Azul muy claro para texto sobre fondo oscuro */
     --color-text-light: #cbd5e1;
     --color-text-white: #ffffff;
 
     --color-bg-light: #001a6b;
-    /* Azul profundo para el fondo general */
     --color-bg-white: #0a215e;
-    /* Azul ligeramente más claro para tarjetas */
     --color-bg-dark: #000a45;
-    /* El azul del header */
 
     --color-success: #10b981;
     --color-whatsapp: #128c7e;
@@ -35,8 +29,9 @@
     --spacing-xl: 8rem;
 
     /* Typography */
-    --font-heading: 'Caveat', cursive;
-    --font-body: 'Caveat', cursive;
+    --font-heading: 'Sour Gummy', sans-serif;
+    --font-body: 'Sour Gummy', sans-serif;
+    --font-logo: 'Caveat', cursive;
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -78,8 +73,11 @@ body {
     font-family: var(--font-body);
     color: var(--color-text-main);
     background-color: var(--color-bg-light);
-    line-height: 1.6;
+    line-height: 1.7;
+    /* Increased for better legibility */
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -92,27 +90,32 @@ h6 {
     color: var(--color-secondary);
     line-height: 1.2;
     margin-bottom: var(--spacing-sm);
+    letter-spacing: normal;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 3.2rem;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 p {
-    font-size: 1.3rem;
-    margin-bottom: var(--spacing-sm);
-    text-align: justify;
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-md);
+    text-align: left;
+    opacity: 1;
+    line-height: 1.6;
 }
 
 a {
@@ -190,7 +193,7 @@ img {
 
 /* Brand & Decoration Utilities */
 .brand-text {
-    font-family: var(--font-heading);
+    font-family: var(--font-logo);
     font-weight: 800;
     font-size: 1.5rem;
     background: linear-gradient(to right,

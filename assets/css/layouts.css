@@ -43,12 +43,14 @@
 
 .main-nav ul {
     display: flex;
-    gap: var(--spacing-md);
+    gap: 1.25rem;
+    /* Reduced from 2rem (var(--spacing-md)) for better fit */
 }
 
 .main-nav a {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 0.95rem;
+    /* Reduced from 1.2rem for a cleaner look */
     color: var(--color-text-white);
     position: relative;
     padding: 0.5rem 0;
@@ -78,10 +80,10 @@
 .btn-sm {
     display: inline-flex;
     align-items: center;
-    padding: 0.4rem 1rem;
+    padding: 0.35rem 0.8rem;
     border-radius: var(--radius-full);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: all 0.2s ease;
     text-decoration: none;
     font-family: var(--font-heading);

@@ -36,19 +36,22 @@
     }
     </script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TSPMG889');</script>
     <!-- End Google Tag Manager -->
     <link rel="canonical" href="https://profesordematematica.com.co/contacto/">
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header -->
@@ -95,7 +98,8 @@
                     <p>Estamos disponibles para resolver tus dudas y agendar tus sesiones académicas. Elige el medio que
                         prefieras y recibe atención inmediata.</p>
                     <div class="header-contacts-hero">
-                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow mb-2" target="_blank">Escríbenos por
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                            class="btn btn-glow mb-2" target="_blank">Escríbenos por
                             WhatsApp</a>
                         <br>
                         <a href="tel:3105986491" class="btn btn-secondary">Llamar Ahora (310 598 6491)</a>
@@ -117,36 +121,31 @@
                         <p>Completa el formulario y te responderemos en el menor tiempo posible.</p>
                     </div>
 
+                    <!-- Mensajes de Estado (JS los activa) -->
+                    <div id="form-message-success" class="info-card bg-success text-white mb-2" style="display: none;">
+                        ¡Mensaje enviado con éxito! Te contactaremos pronto.
+                    </div>
+                    <div id="form-message-error" class="info-card bg-accent text-white mb-2" style="display: none;">
+                        Ocurrió un error al enviar tu mensaje. Intenta de nuevo o llámanos.
+                    </div>
+
                     <!-- Placeholder para Formulario -->
-                    <form action="#" method="POST" class="info-card card-glass" style="max-width: 500px;">
-                        <div style="margin-bottom: 15px;">
-                            <label for="nombre" style="display: block; margin-bottom: 5px;">Nombre Completo</label>
-                            <input type="text" id="nombre" name="nombre" required
-                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);">
+                    <form action="../php/contact-handler.php" method="POST" class="info-card card-glass contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required class="form-control"
+                                autocomplete="name">
                         </div>
-                        <div style="margin-bottom: 15px;">
-                            <label for="celular" style="display: block; margin-bottom: 5px;">Celular / WhatsApp</label>
-                            <input type="tel" id="celular" name="celular" required
-                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);">
+                        <div class="form-group">
+                            <label for="celular">Celular / WhatsApp</label>
+                            <input type="tel" id="celular" name="celular" required class="form-control"
+                                autocomplete="tel">
                         </div>
-                        <div style="margin-bottom: 15px;">
-                            <label for="materia" style="display: block; margin-bottom: 5px;">Materia de Interés</label>
-                            <select id="materia" name="materia"
-                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);">
-                                <option value="matematica">Matemáticas</option>
-                                <option value="estadistica">Estadística</option>
-                                <option value="excel">Excel</option>
-                                <option value="otros">Otras / No listado</option>
-                            </select>
+                        <div class="form-group">
+                            <label for="mensaje">Cuéntanos tu necesidad</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="form-control" required></textarea>
                         </div>
-                        <div style="margin-bottom: 15px;">
-                            <label for="mensaje" style="display: block; margin-bottom: 5px;">Cuéntanos tu
-                                necesidad</label>
-                            <textarea id="mensaje" name="mensaje" rows="4"
-                                style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--color-border);"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-glow" style="width: 100%;">Enviar
-                            Mensaje</button>
+                        <button type="submit" class="btn btn-primary btn-glow">Enviar Mensaje</button>
                     </form>
                 </div>
 
@@ -166,11 +165,9 @@
                     </div>
 
                     <!-- Mapa Dinámico Placeholder -->
-                    <div class="mt-4"
-                        style="width: 100%; height: 250px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                        <iframe width="100%" height="100%" frameborder="0"
-                            src="https://www.openstreetmap.org/export/embed.html?bbox=-75.6133%2C6.1688%2C-75.5933%2C6.1888&amp;layer=mapnik&amp;marker=6.1788%2C-75.6033"
-                            style="border: 1px solid var(--color-border); filter: grayscale(100%) invert(100%) brightness(95%);"></iframe>
+                    <div class="mt-4 map-container">
+                        <iframe class="map-iframe" width="100%" height="100%" frameborder="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-75.6133%2C6.1688%2C-75.5933%2C6.1888&amp;layer=mapnik&amp;marker=6.1788%2C-75.6033"></iframe>
                     </div>
                 </div>
             </div>
@@ -235,12 +232,30 @@
             <img src="../assets/icons/phone.svg" alt="Teléfono"
                 class="contact-icon contact-icon-lg contact-icon-invert"> 310 598 6491
         </a>
-        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn-float-whatsapp"
-            target="_blank" aria-label="Chat en WhatsApp">
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+            class="btn-float-whatsapp" target="_blank" aria-label="Chat en WhatsApp">
             <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
         </a>
     </div>
 
+    <script>
+        // Manejar los mensajes de éxito/error del formulario a través de los parámetros de la URL
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status');
+
+            if (status === 'success') {
+                const successMsg = document.getElementById('form-message-success');
+                if (successMsg) successMsg.style.display = 'block';
+                // Quitar el parámetro de la URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            } else if (status === 'error') {
+                const errorMsg = document.getElementById('form-message-error');
+                if (errorMsg) errorMsg.style.display = 'block';
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+    </script>
 </body>
 
 </html>

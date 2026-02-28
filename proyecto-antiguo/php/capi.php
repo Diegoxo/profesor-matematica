@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '../../php/logger.php'; log_visitor_activity(); ?>
 <?php
 // Cargar variables de entorno desde .env
 $env = parse_ini_file('.env');

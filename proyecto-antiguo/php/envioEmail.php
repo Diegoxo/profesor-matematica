@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '../../php/logger.php'; log_visitor_activity(); ?>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Nombre = $_POST["Nombre"];

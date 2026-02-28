@@ -36,6 +36,10 @@ $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 // 5. Enviar el correo
 mail($to, $subject, $email_body, $headers);
 
+// ** Registros de Analítica **
+require_once __DIR__ . '/logger.php';
+log_visitor_activity(200, "Formulario Enviado con éxito");
+
 // 6. Redirección final con aviso de éxito
 header("Location: https://profesordematematica.com.co/contacto/?status=success");
 exit();

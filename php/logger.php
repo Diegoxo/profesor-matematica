@@ -1,7 +1,6 @@
-<?php require_once __DIR__ . '../php/logger.php'; log_visitor_activity(); ?>
 <?php
 /**
- * Log System - Captura analíticas sin cookies ni permisos invasivos.
+ * Log System - Captura analÃ­ticas sin cookies ni permisos invasivos.
  * Respeta la privacidad anonimizando la IP.
  */
 
@@ -11,17 +10,17 @@ function log_visitor_activity($status_code = 200, $error_msg = "")
 
     // 1. Capturar y Anonimizar IP
     $ip = $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
-    // Anonimización básica: reemplaza el último bloque por 0 (IPv4) o limpia la IPv6
+    // AnonimizaciÃ³n bÃ¡sica: reemplaza el Ãºltimo bloque por 0 (IPv4) o limpia la IPv6
     if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
         $ip = preg_replace('/[0-9]+$/', '0', $ip);
     } else {
-        $ip = bin2hex(inet_pton($ip)); // Formato hexadecimal anónimo para IPv6
+        $ip = bin2hex(inet_pton($ip)); // Formato hexadecimal anÃ³nimo para IPv6
     }
 
-    // 2. Extraer información del User-Agent
+    // 2. Extraer informaciÃ³n del User-Agent
     $ua = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
 
-    // Identificación simple de OS y Navegador
+    // IdentificaciÃ³n simple de OS y Navegador
     $os = "Desconocido";
     if (preg_match('/windows|win32/i', $ua))
         $os = 'Windows';
@@ -56,7 +55,7 @@ function log_visitor_activity($status_code = 200, $error_msg = "")
     $lang = $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? 'Desconocido';
     $protocol = $_SERVER['SERVER_PROTOCOL'] ?? 'HTTP/1.1';
 
-    // 4. Preparar línea CSV
+    // 4. Preparar lÃ­nea CSV
     $data = [
         $timestamp,
         $ip,
@@ -76,11 +75,11 @@ function log_visitor_activity($status_code = 200, $error_msg = "")
     $file_exists = file_exists($log_file);
     $handle = fopen($log_file, 'a');
 
-    // Añadir encabezados si el archivo es nuevo
+    // AÃ±adir encabezados si el archivo es nuevo
     if (!$file_exists) {
         fputcsv($handle, [
             'Fecha/Hora',
-            'IP_Anónima',
+            'IP_AnÃ³nima',
             'OS',
             'Navegador',
             'Dispositivo',

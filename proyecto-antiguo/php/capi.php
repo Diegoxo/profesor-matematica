@@ -33,7 +33,7 @@ $url = "https://graph.facebook.com/v18.0/{$pixel_id}/events?access_token={$acces
 // Inicializar cURL
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // Desactivar verificación SSL
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // Desactivar verificaciÃ³n SSL
 curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $json_data);

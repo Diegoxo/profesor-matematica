@@ -16,3 +16,6 @@ RewriteCond %{THE_REQUEST} ^.*/index\.html
 RewriteRule ^(.*)index\.html$ /$1 [L,R=301]
 # 4. Permitir que los archivos .html procesen código PHP (Hostinger/LiteSpeed)
 AddHandler application/x-httpd-lsphp .htm .html
+
+# 5. Página de error 404 personalizada (Formato HTML)
+ErrorDocument 404 /404.html

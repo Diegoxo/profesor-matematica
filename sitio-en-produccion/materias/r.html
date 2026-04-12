@@ -1,0 +1,230 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda en Lenguaje R | Estadística y Ciencia de Datos | Profesor Particular</title>
+    <meta name="description"
+        content="Asesoría especializada en Lenguaje R. Aprende análisis estadístico avanzado, visualización de datos con ggplot2 y programación en RStudio con expertos.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Materias",
+        "item": "https://profesordematematica.com.co/materias/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Lenguaje R",
+        "item": "https://profesordematematica.com.co/materias/r"
+      }]
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/materias/r">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="./">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero bg-deep">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Ayudas en r</h1>
+                    <p>Domina el estándar de la computación estadística. Te ayudamos a manejar RStudio, limpiar datasets
+                        y realizar análisis complejos de forma eficiente.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow" target="_blank">Solicitar Asesoria</a>
+                        <a href="./" class="btn btn-secondary">Ver todas las materias</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/ayuda-lenguaje-r-estadistica-computacional.avif"
+                        alt="Asesoría profesional en programación y análisis de datos con R">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Temas / Servicios R -->
+        <section class="section bg-soft border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Servicios Relacionados con R</h2>
+                    <p>Apoyo técnico para tesistas, investigadores y estudiantes universitarios.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <h3>Manipulación de Datos (Tidyverse)</h3>
+                        <p>Uso de dplyr y tidyr para la limpieza y preparación de conjuntos de datos complejos.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Visualización (ggplot2)</h3>
+                        <p>Creación de gráficos de alta calidad para informes académicos e investigaciones.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Modelado Estadístico</h3>
+                        <p>Regresión, ANOVA, GLM y modelos avanzados implementados directamente en R.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>RMarkdown y Reportes</h3>
+                        <p>Generación de reportes dinámicos y reproducibles en PDF, HTML o Word.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Por qué R -->
+        <section class="section bg-dark">
+            <div class="container split-layout">
+                <div class="split-image">
+                    <img src="../assets/img/importancia-r-estadistica-investigacion.avif"
+                        alt="Entorno de RStudio con código y gráficas estadísticas">
+                </div>
+                <div class="split-text">
+                    <h2>Poder Estadístico sin Límites</h2>
+                    <p>El lenguaje R es la herramienta predilecta para la academia y la investigación de vanguardia.
+                        Ayudamos a los estudiantes a superar la curva de aprendizaje inicial que puede ser intimidante.
+                    </p>
+                    <p>Nos enfocamos en la reproducibilidad y el rigor estadístico, asegurando que tus análisis sean
+                        correctos y tus resultados confiables.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CTA -->
+        <section class="section bg-gradient">
+            <div class="container text-center">
+                <h2 class="text-white">¿RStudio te está dando errores crípticos?</h2>
+                <p class="text-white opacity-9">Depuramos tu código y te enseñamos las mejores prácticas en R.</p>
+                <div class="mt-2 text-center">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow">Obtener Ayuda en R</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call" aria-label="Llamar ahora">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> 310 598 6491
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+            class="btn-float-whatsapp" target="_blank" aria-label="Chat en WhatsApp">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

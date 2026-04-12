@@ -1,0 +1,336 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorías de Python | Aprende a Programar desde Cero</title>
+    <meta name="description"
+        content="Servicio de tutoría de programación en Python. Aprende sintaxis, lógica de programación, automatización y análisis de datos con expertos.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tutorías",
+        "item": "https://profesordematematica.com.co/tutorias/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Python",
+        "item": "https://profesordematematica.com.co/tutorias/python"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tutorías de Python",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Profesor de Matemática",
+        "image": "https://profesordematematica.com.co/assets/logos/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cara 48 # 46-08",
+          "addressLocality": "Itagüí",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      },
+      "description": "Introducción y soporte en programación con lenguaje Python."
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/tutorias/python">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Tutorías de Python</h1>
+                    <p>Domina el lenguaje de programación más versátil y demandado del momento. Te enseñamos a pensar
+                        como programador y a construir soluciones reales desde tu primera línea de código.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow" target="_blank">Iniciar Mi Tutoría</a>
+                        <a href="#temario" class="btn btn-secondary">Temario Python</a>
+                        <a href="./" class="btn btn-secondary">Ver Tutorías</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/tutoria-python-programacion-codigo.avif"
+                        alt="Código de programación Python limpio en pantalla profesional">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Subjects Details -->
+        <section id="temario" class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>De Novato a Desarrollador</h2>
+                    <p>Contenido estructurado para un aprendizaje progresivo y sólido.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <div class="info-card-icon">🐍</div>
+                        <h3>Fundamentos</h3>
+                        <p>Sintaxis básica, tipos de datos, estructuras de control (if, for, while) y funciones.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📦</div>
+                        <h3>Estructuras de Datos</h3>
+                        <p>Manejo avanzado de listas, diccionarios, tuplas y comprensión de listas para código
+                            eficiente.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🏗️</div>
+                        <h3>POO</h3>
+                        <p>Programación Orientada a Objetos: clases, herencia y polimorfismo aplicado a problemas
+                            reales.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📊</div>
+                        <h3>Análisis de Datos</h3>
+                        <p>Introducción a Pandas y NumPy para procesamiento de grandes volúmenes de información.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🤖</div>
+                        <h3>Automatización</h3>
+                        <p>Scripts para manipulación de archivos, lectura de PDFs, Excels y web scraping básico.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📈</div>
+                        <h3>Visualización</h3>
+                        <p>Creación de gráficas profesionales con Matplotlib y Seaborn para presentaciones de datos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Philosophy -->
+        <section class="section bg-soft border-bottom">
+            <div class="container split-layout">
+                <div class="split-image">
+                    <img src="../assets/img/aprendiendo-python-programacion-estudiante.avif"
+                        alt="Estudiante escribiendo sus primeros scripts de Python exitosamente">
+                </div>
+                <div class="split-text">
+                    <h2>Programación sin Frustración</h2>
+                    <p>La mayoría de los cursos fallan porque se pierden en teoría densa. En nuestras tutorías de Python
+                        trabajamos bajo el concepto de **Aprendizaje Basado en Proyectos**.</p>
+                    <p>Si quieres automatizar un reporte de tu trabajo o analizar una base de datos de tu tesis, usamos
+                        **ese mismo problema** como material de clase. Así, aprendes mientras resuelves lo que
+                        necesitas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="section bg-deep">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por qué aprender con nosotros</h2>
+                    <p>Beneficios de una tutoría uno a uno frente a un curso grabado.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <h3>Depuración en Vivo</h3>
+                        <p>Resolvemos tus errores de sintaxis y lógica en el momento, explicándote el porqué del fallo.
+                        </p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Código de Calidad</h3>
+                        <p>No solo te enseñamos a que funcione, sino a escribir código limpio y profesional (PEP 8).</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Ritmo Personal</h3>
+                        <p>Si un concepto es difícil, nos detenemos. Si ya lo sabes, avanzamos. Tú marcas la velocidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Specialization Section -->
+        <section class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text">
+                        <h2>Desarrollo y Lógica de Programación con Python</h2>
+                        <p>Aprender Python es abrir la puerta a la tecnología moderna. Nuestras tutorías se centran en
+                            desarrollar el pensamiento computacional. Desde la sintaxis básica hasta el manejo de
+                            librerías para ciencia de datos o automatización, te acompañamos para que construyas tus
+                            propios scripts de manera eficiente y limpia.</p>
+                        <p>Entendemos que cada estudiante enfrenta desafíos únicos: desde la lógica de los algoritmos
+                            hasta la complejidad de la programación orientada a objetos. Por ello, nuestras sesiones no
+                            se limitan a copiar y pegar código; profundizamos en la <strong>arquitectura de la
+                                solución</strong>, asegurando que el alumno sea capaz de escribir código robusto y
+                            defender sus desarrollos ante cualquier tribunal académico o entorno profesional.</p>
+                    </div>
+                    <div class="info-card mt-0">
+                        <h3 class="text-secondary mb-2">Portafolio Especializado</h3>
+                        <ul class="check-list text-light">
+                            <li><span class="check-icon">✓</span> Tutorías para Fundamentos de Programación</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Estructuras de Datos (Listas,
+                                Diccionarios)</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Programación Orientada a Objetos (POO)
+                            </li>
+                            <li><span class="check-icon">✓</span> Tutorías en Automatización de Tareas (Scripting)</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Análisis de Datos con Pandas y Numpy
+                            </li>
+                            <li><span class="check-icon">✓</span> Tutorías en Visualización con Matplotlib y Seaborn
+                            </li>
+                            <li><span class="check-icon">✓</span> Tutorías para Web Scraping</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Desarrollo de Aplicaciones Básicas</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Depuración y Buenas Prácticas (PEP 8)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section bg-dark">
+            <div class="container text-center">
+                <h2 class="text-white">¿Listo para escribir tu primer script?</h2>
+                <p class="text-white opacity-9 mb-2">El futuro es de quienes saben hablarle
+                    a las máquinas.</p>
+                <div class="flex-center">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow">
+                        Agendar Clase de Python
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> Llamar
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn-float-whatsapp" target="_blank">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

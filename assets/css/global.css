@@ -67,6 +67,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    scroll-padding-top: 150px; /* Asegura que los anchors (#) no queden bajo el header */
 }
 
 body {
@@ -89,6 +90,7 @@ h6 {
     font-family: var(--font-heading);
     color: var(--color-secondary);
     line-height: 1.2;
+    margin-top: 0; /* Asegura que no haya espacio extra arriba */
     margin-bottom: var(--spacing-sm);
     letter-spacing: normal;
 }
@@ -338,6 +340,29 @@ img {
     gap: 1rem;
 }
 
-.gap-2 {
-    gap: 2rem;
+/* Breadcrumb Integrado */
+.breadcrumb-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 3px 0;
+    margin-bottom: 0 !important; /* Forza que no empuje el contenido de abajo con margen */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.8rem;
+}
+
+.breadcrumb-header .container {
+    display: flex;
+}
+
+/* Breadcrumb en Header */
+.breadcrumb-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 0; /* Más delgada */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.75rem; /* Letra más pequeña */
+}
+
+.breadcrumb-header .container {
+    display: flex;
 }

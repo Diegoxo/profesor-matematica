@@ -2,17 +2,17 @@
 
 /* --- Header & Navigation --- */
 .site-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--header-height);
+    height: auto;
     background-color: var(--color-primary-dark);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .nav-container {
@@ -20,6 +20,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: var(--header-height);
+    /* Forza los 60px originales del diseño */
 }
 
 .logo a {
@@ -227,12 +229,16 @@
 @media (min-width: 600px) and (max-width: 1200px) {
     .site-header {
         height: auto;
-        padding: 15px 0;
+        padding: 5px 0;
+        /* Reducido de 15px */
     }
 
     .nav-container {
         flex-wrap: wrap;
         justify-content: space-between;
+        height: auto;
+        padding-bottom: 15px;
+        /* Solo abajo para separar de la cinta */
     }
 
     .header-contacts {
@@ -241,21 +247,25 @@
 
     .main-nav {
         width: 100%;
-        margin-top: 15px;
-        padding-top: 10px;
+        margin-top: 5px;
+        /* Reducido de 15px */
+        padding-top: 5px;
+        /* Reducido de 10px */
     }
 
     .main-nav ul {
         justify-content: center;
-        gap: 1.5rem;
+        gap: 1rem;
+        /* Más compacto */
     }
 }
 
 @media (max-width: 600px) {
     .site-header {
         height: auto;
-        min-height: 50px;
-        padding-bottom: 5px;
+        min-height: 40px;
+        padding-bottom: 0px;
+        /* Regresado al mínimo */
     }
 
     .desktop-only {
@@ -264,27 +274,34 @@
 
     .nav-container {
         flex-direction: column;
-        padding-top: 5px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        /* Espacio para respirar sobre la cinta */
+        height: auto;
     }
 
     .logo {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
+        /* Sin margen inferior */
     }
 
     .main-nav {
         width: 100%;
-        padding-top: 5px;
+        padding-top: 0px;
+        /* Sin margen superior */
     }
 
     .main-nav ul {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 8px;
+        gap: 5px;
     }
 
     .main-nav a {
-        font-size: 0.85rem;
-        padding: 6px 10px;
+        font-size: 0.8rem;
+        /* Un poco más pequeña en móvil */
+        padding: 4px 8px;
+        /* Menos relleno */
         background-color: rgba(255, 255, 255, 0.1);
         color: var(--color-text-white);
         border: 1px solid rgba(255, 255, 255, 0.2);

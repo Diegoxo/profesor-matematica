@@ -1,0 +1,330 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorías de estática | Equilibrio de Cuerpos y Mecánica</title>
+    <meta name="description"
+        content="Servicio de tutoría especializada en estática y mecánica clásica. Aprende diagramas de cuerpo libre, equilibrio de partículas, armaduras y momentos de fuerza.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tutorías",
+        "item": "https://profesordematematica.com.co/tutorias/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Estática",
+        "item": "https://profesordematematica.com.co/tutorias/estatica"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tutorías de Estática",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Profesor de Matemática",
+        "image": "https://profesordematematica.com.co/assets/logos/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cara 48 # 46-08",
+          "addressLocality": "Itagüí",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      },
+      "description": "Servicio enfocado en el equilibrio de cuerpos y mecánica clásica."
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/tutorias/estatica">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Tutorías de estática</h1>
+                    <p>La base de toda ingeniería civil y mecánica. Te ayudamos a comprender las leyes del equilibrio y
+                        a dominar los diagramas de cuerpo libre para resolver cualquier estructura.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow" target="_blank">Agendar Mi Tutoría</a>
+                        <a href="#contenidos" class="btn btn-secondary">Temario de Estática</a>
+                        <a href="./" class="btn btn-secondary">Ver Tutorías</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/tutoria-de-estatica-fisica-estructuras.avif"
+                        alt="Diagrama de fuerzas sobre una viga en equilibrio">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Subjects Details -->
+        <section id="contenidos" class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Estructuras, Equilibrio y Fuerzas</h2>
+                    <p>Fundamentos sólidos para carreras de ingeniería y arquitectura.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <div class="info-card-icon">📐</div>
+                        <h3>Vectores y Sistemas</h3>
+                        <p>Suma de fuerzas, descomposición vectorial y equilibrio de la partícula en 2D y 3D.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">⚖️</div>
+                        <h3>Diagramas de Cuerpo Libre</h3>
+                        <p>La clave de la estática: identificación correcta de reacciones y fuerzas externas.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🏗️</div>
+                        <h3>Análisis de Armaduras</h3>
+                        <p>Método de nodos y método de secciones para estructuras de puentes y techos.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🔩</div>
+                        <h3>Fricción y Momentos</h3>
+                        <p>Cálculo de momentos de fuerza, pares y equilibrio de cuerpos rígidos con rozamiento.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🔧</div>
+                        <h3>Centroides e Inercia</h3>
+                        <p>Determinación de centros de gravedad y momentos de inercia para secciones transversales.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🌉</div>
+                        <h3>Cargas Distribuidas</h3>
+                        <p>Simplificación de sistemas de fuerzas y momentos en vigas y soportes estructurales.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Focus -->
+        <section class="section bg-soft border-bottom">
+            <div class="container split-layout reverse">
+                <div class="split-text">
+                    <h2>Entendimiento de Cuerpos Rígidos</h2>
+                    <p>La estática no es solo aplicar fórmulas de sumatoria de fuerzas. Se trata de entender cómo las
+                        cargas se transmiten a través de los materiales y cómo se mantienen estables las grandes obras
+                        de ingeniería.</p>
+                    <p>En nuestras tutorías, pasamos de la abstracción de los libros a la visualización real de los
+                        problemas, asegurando que el estudiante desarrolle la intuición física necesaria para su vida
+                        profesional.</p>
+                </div>
+                <div class="split-image">
+                    <img src="../assets/img/maqueta-puente-armadura-fisica-estatica.avif"
+                        alt="Profesor explicando equilibrio en maqueta de armadura">
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="section bg-deep">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Para estudiantes de:</h2>
+                    <p>Servicio enfocado en las facultades más exigentes.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <h3>Ingeniería Civil</h3>
+                        <p>Preparación base para Mecánica de Sólidos, Estructuras y Análisis Estructural.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Arquitectura</h3>
+                        <p>Comprensión del comportamiento de vigas y columnas para diseño arquitectónico seguro.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Ingeniería Mecánica</h3>
+                        <p>Bases para el diseño de máquinas y análisis de componentes estáticos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Specialization Section -->
+        <section class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text">
+                        <h2>Dominio de la Mecánica y el Equilibrio</h2>
+                        <p>El estudio de las fuerzas y su equilibrio es la piedra angular de la ingeniería estructural.
+                            Nuestras tutorías se centran en la visualización espacial y la precisión en el cálculo
+                            manual y asistido. Te preparamos para resolver los problemas más complejos de armaduras,
+                            vigas y cables con una metodología paso a paso.</p>
+                        <p>Entendemos que cada estudiante enfrenta desafíos únicos: desde la visualización de diagramas
+                            de cuerpo libre hasta la rigurosidad técnica de los cálculos estructurales. Por ello,
+                            nuestras sesiones no se limitan a la resolución de problemas tipo; profundizamos en el
+                            <strong>porqué</strong> de cada principio físico, asegurando que el alumno sea capaz de
+                            analizar sistemas complejos y defender sus cálculos ante cualquier tribunal académico o
+                            entorno profesional.
+                        </p>
+                    </div>
+                    <div class="info-card mt-0">
+                        <h3 class="text-secondary mb-2">Portafolio Especializado</h3>
+                        <ul class="check-list text-light">
+                            <li><span class="check-icon">✓</span> Tutorías para Diagramas de Cuerpo Libre</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Análisis de Armaduras y Cerchas</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Momentos de Inercia y Centroides</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Rozamiento y Fricción</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Cables y Cargas Distribuidas</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Esfuerzos Internos en Vigas</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Estructuras en 3D</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Resolución de Parciales de Ingeniería</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Aplicaciones en Software de Diseño</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section bg-gradient">
+            <div class="container text-center">
+                <h2 class="text-white">¿Tus diagramas no cierran?</h2>
+                <p class="text-white opacity-9 mb-2">Ven y domina la estática con una sola
+                    explicación clara.</p>
+                <div class="flex-center">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow">
+                        Agendar Tutoría de Estática
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> Llamar
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn-float-whatsapp" target="_blank">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

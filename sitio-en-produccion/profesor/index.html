@@ -1,0 +1,563 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesor Particular | Especialista en Clases Personalizadas</title>
+    <meta name="description"
+        content="Conoce al profesor particular líder en Colombia. Experto en enseñanza de matemáticas, estadística y finanzas con metodología personalizada y resultados garantizados.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Profesor",
+        "item": "https://profesordematematica.com.co/profesor/"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Clases Particulares y Tutorías",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Profesor de Matemática",
+        "image": "https://profesordematematica.com.co/assets/logos/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cara 48 # 46-08",
+          "addressLocality": "Itagüí",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Colombia"
+      },
+      "description": "Servicio de profesor particular a domicilio y virtual para matemáticas, estadística, finanzas y más."
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/profesor/">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="./" class="active">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Profesor particular</h1>
+                    <p>Encuentra el respaldo académico que necesitas. Como profesor particular con años de experiencia,
+                        mi misión es transformar la frustración en comprensión mediante una enseñanza humana y efectiva.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow" target="_blank">Agendar Clase</a>
+                        <a href="#perfil" class="btn btn-secondary">Ver Perfil</a>
+                        <a href="ciudades/" class="btn btn-secondary">Ver Ciudades</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/profesor-particular-dando-clase.avif"
+                        alt="Profesor particular explicando ejercicios a un estudiante">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Portafolio de Materias -->
+        <section class="section bg-soft border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>¿Cuál es el profesor que necesitas?</h2>
+                    <p>Haz clic en la materia de tu interés para conocer el perfil del profesor y los contenidos
+                        específicos.</p>
+                </div>
+
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-matematica.avif" alt="Profesor de matemáticas">
+                        </div>
+                        <h3>Profesor de matemáticas</h3>
+                        <p>Profesor experto en simplificar el cálculo y el álgebra para estudiantes de todas las edades.
+                        </p>
+                        <a href="matematica" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-estadistica.avif" alt="Profesor de estadística">
+                        </div>
+                        <h3>Profesor de estadística</h3>
+                        <p>Experto profesional especializado en interpretación de datos y probabilidad
+                            aplicada.</p>
+                        <a href="estadistica" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-fisica.avif" alt="Profesor de física">
+                        </div>
+                        <h3>Profesor de física</h3>
+                        <p>Profesor con amplia trayectoria enseñando mecánica y fenómenos físicos de forma intuitiva.
+                        </p>
+                        <a href="fisica" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-matematica-financiera.avif"
+                                alt="Profesor de matemática financiera">
+                        </div>
+                        <h3>Profesor de matemática financiera</h3>
+                        <p>Especialista financiero dedicado a enseñar la gestión del capital y evaluación de proyectos.
+                        </p>
+                        <a href="matematica-financiera" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-investigacion-de-operaciones.avif"
+                                alt="Profesor de investigación de operaciones">
+                        </div>
+                        <h3>Profesor de investigación de operaciones</h3>
+                        <p>Mentor técnico en modelos de optimización y logística para futuros ingenieros.</p>
+                        <a href="investigacion-de-operaciones" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-estatica.avif" alt="Profesor de estática">
+                        </div>
+                        <h3>Profesor de estática</h3>
+                        <p>Instructor especializado en el análisis de equilibrio estructural y mecánica de cuerpos.</p>
+                        <a href="estatica" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-economia.avif" alt="Profesor de economía">
+                        </div>
+                        <h3>Profesor de economía</h3>
+                        <p>Docente líder en microeconomía y análisis de mercados para perfiles de negocios.</p>
+                        <a href="economia" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-excel.avif" alt="Profesor de Excel">
+                        </div>
+                        <h3>Profesor de Excel</h3>
+                        <p>Experto en productividad digital que te enseña a automatizar tareas con herramientas
+                            avanzadas.</p>
+                        <a href="excel" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-python.avif" alt="Profesor de Python">
+                        </div>
+                        <h3>Profesor de Python</h3>
+                        <p>Instructor de programación enfocado en lógica de código y desarrollo de soluciones digitales.
+                        </p>
+                        <a href="python" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-image">
+                            <img src="../assets/img/profesor-de-r.avif" alt="Profesor de R">
+                        </div>
+                        <h3>Profesor de R</h3>
+                        <p>Especialista en computación estadística que guía tu aprendizaje en ciencia de datos
+                            científica.</p>
+                        <a href="r" class="text-primary">Ver Perfil &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Ciudades -->
+        <section class="section bg-soft border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Encuentra tu profesor en tu ciudad</h2>
+                    <p>Brindamos cobertura presencial en las principales zonas de Colombia. Selecciona tu ubicación para
+                        ver detalles.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-medellin.avif" alt="Profesor de matemáticas en Medellín">
+                        </div>
+                        <h3>Medellín</h3>
+                        <a href="ciudades/medellin" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-bogota.avif" alt="Profesor de matemáticas en Bogotá">
+                        </div>
+                        <h3>Bogotá</h3>
+                        <a href="ciudades/bogota" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-cali.avif" alt="Profesor de matemáticas en Cali">
+                        </div>
+                        <h3>Cali</h3>
+                        <a href="ciudades/cali" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-itagui.avif" alt="Profesor de matemáticas en Itagüí">
+                        </div>
+                        <h3>Itagüí</h3>
+                        <a href="ciudades/itagui" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-envigado.avif" alt="Profesor de matemáticas en Envigado">
+                        </div>
+                        <h3>Envigado</h3>
+                        <a href="ciudades/envigado" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-sabaneta.avif" alt="Profesor de matemáticas en Sabaneta">
+                        </div>
+                        <h3>Sabaneta</h3>
+                        <a href="ciudades/sabaneta" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-la-estrella.avif"
+                                alt="Profesor de matemáticas en La Estrella">
+                        </div>
+                        <h3>La Estrella</h3>
+                        <a href="ciudades/laestrella" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-pereira.avif" alt="Profesor de matemáticas en Pereira">
+                        </div>
+                        <h3>Pereira</h3>
+                        <a href="ciudades/pereira" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-manizales.avif" alt="Profesor de matemáticas en Manizales">
+                        </div>
+                        <h3>Manizales</h3>
+                        <a href="/profesor/ciudades/manizales" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-armenia.avif" alt="Profesor de matemáticas en Armenia">
+                        </div>
+                        <h3>Armenia</h3>
+                        <a href="/profesor/ciudades/armenia" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-barranquilla.avif"
+                                alt="Profesor de matemáticas en Barranquilla">
+                        </div>
+                        <h3>Barranquilla</h3>
+                        <a href="/profesor/ciudades/barranquilla" class="text-primary">Ver Profesor &rarr;</a>
+                    </article>
+                    <article class="info-card info-card-sm">
+                        <div class="info-card-image">
+                            <img src="../assets/img/ciudad-colombia.avif" alt="Otras ciudades de Colombia">
+                        </div>
+                        <h3>Otras ciudades</h3>
+                        <a href="/profesor/ciudades" class="text-primary">Ver todas &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Trayectoria (Extenso) -->
+        <section id="perfil" class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pasión por la enseñanza personalizada</h2>
+                </div>
+                <div class="text-content">
+                    <p>Ser un <strong>profesor particular</strong> va mucho más allá de simplemente resolver problemas
+                        en un tablero. Se trata de identificar las barreras cognitivas que impiden que un estudiante
+                        avance y construir puentes de conocimiento que sean sólidos y duraderos. A lo largo de mi
+                        trayectoria profesional en Colombia, he tenido el privilegio de acompañar a cientos de alumnos
+                        de colegios, universidades y profesionales de diversas áreas, adaptando mi metodología a cada
+                        ritmo de aprendizaje único.</p>
+                    <p>La educación tradicional a menudo falla en abordar las dudas individuales debido a la
+                        masificación de las aulas. Por ello, mi enfoque como profesor privado se centra en la
+                        exclusividad: cada minuto de la sesión está dedicado íntegramente a tus objetivos. Ya sea que
+                        necesites superar un examen de admisión, nivelar tus conocimientos básicos o profundizar en
+                        temas complejos de ciencias exactas, mi compromiso es brindarte las herramientas analíticas para
+                        que tú mismo seas capaz de enfrentar nuevos retos académicos con total seguridad y autonomía.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Metodología (Extenso) -->
+        <section class="section bg-deep border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>El Método: Comprensión Antes que Memorización</h2>
+                </div>
+                <div class="text-content">
+                    <p>En el mundo académico actual, existe una tendencia peligrosa a memorizar fórmulas sin entender su
+                        origen o aplicación. Como profesor particular, rompo con ese esquema invitando al estudiante a
+                        razonar. Mis clases están estructuradas para partir de lo intuitivo hacia lo abstracto,
+                        asegurando que cada concepto se asiente sobre una base lógica. Utilizamos ejemplos de la vida
+                        real, aplicaciones en el campo laboral y simulacros prácticos que preparan al alumno para la
+                        realidad de sus evaluaciones y proyectos.</p>
+                    <p>La tecnología también juega un papel fundamental en mis tutorías. Integro herramientas digitales
+                        y software especializado cuando el tema lo requiere, permitiendo que el estudiante visualice los
+                        datos y las funciones de manera dinámica. Esta combinación de pedagogía tradicional con recursos
+                        modernos garantiza que el aprendizaje sea no solo efectivo, sino también motivador, despertando
+                        una curiosidad genuina por la materia que antes parecía inalcanzable.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Beneficios (Cards) -->
+        <section class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>¿Por qué elegir mis clases?</h2>
+                    <p>Ventajas competitivas del servicio de un profesor privado de alta calidad.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <div class="info-card-icon">🚀</div>
+                        <h3>Resultados Rápidos</h3>
+                        <p>Enfoque directo en tus debilidades para optimizar el tiempo de estudio.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">🏠</div>
+                        <h3>Flexibilidad Total</h3>
+                        <p>Clases presenciales a domicilio o virtuales según tu comodidad.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">🎓</div>
+                        <h3>Nivel Universitario</h3>
+                        <p>Capacidad técnica para abordar temas de alta complejidad académica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Image Decor -->
+        <section class="section bg-soft">
+            <div class="container">
+                <div class="split-layout reverse">
+                    <div class="split-text">
+                        <h2>Compromiso con la Excelencia</h2>
+                        <p>Cada sesión es una oportunidad para mejorar el rendimiento académico y profesional. Como tu
+                            profesor, me involucro en tu proceso hasta que los resultados sean visibles.</p>
+                        <a href="/metodologia" class="btn btn-secondary">Conocer mi Metodología</a>
+                    </div>
+                    <div class="split-image">
+                        <img src="../assets/img/ensetanza-personalizada-profesor.avif"
+                            alt="Enseñanza personalizada liderada por profesor experto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Ventajas de un Profesor Particular -->
+        <section class="section bg-deep">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Diferencia entre Clase Grupal y Particular</h2>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <h3>Personalización</h3>
+                        <p>Ritmo ajustado a tu capacidad de aprendizaje, sin presiones externas.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Confianza</h3>
+                        <p>Un espacio seguro para preguntar y despejar dudas sin temor.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Enfoque</h3>
+                        <p>Eliminación de distracciones típicas del aula de clase convencional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Testimonios Preview -->
+        <section class="section bg-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Opiniones de Estudiantes</h2>
+                    <p>Lo que dicen quienes ya han transformado sus notas conmigo.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <p>"Pasé de perder cálculo a ser de los mejores de mi clase. Un profesor excelente."</p>
+                        <h4 class="text-secondary">- Daniel R., Ingeniería</h4>
+                    </div>
+                    <div class="info-card">
+                        <p>"La paciencia y el conocimiento que tiene son increíbles. Recomendado 100%."</p>
+                        <h4 class="text-secondary">- Laura M., Bachillerato</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: FAQ Quick -->
+        <section class="section bg-soft border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <h3>¿Dónde son las clases?</h3>
+                        <p>Principalmente a domicilio en Medellín y área metropolitana, o vía Google Meet/Zoom.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>¿Qué niveles manejas?</h3>
+                        <p>Desde nivel básico escolar hasta maestría y aplicaciones profesionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: Final CTA -->
+        <section class="section bg-gradient">
+            <div class="container text-center">
+                <h2 class="text-white">¿Hablamos de tus estudios?</h2>
+                <p class="text-white opacity-9 mb-2">No dejes que los temas se acumulen. Contáctame ahora y aseguremos
+                    tu éxito.</p>
+                <div class="flex-center">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow">
+                        Contactar al Profesor Particular
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> Llamar
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn-float-whatsapp" target="_blank">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

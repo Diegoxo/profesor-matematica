@@ -1,0 +1,335 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoría de matemática | Profesor Particular Personalizado</title>
+    <meta name="description"
+        content="Servicios especializados de tutoría de matemática a domicilio y virtual. Domina el cálculo, álgebra, trigonometría y más con nuestra metodología práctica.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tutorías",
+        "item": "https://profesordematematica.com.co/tutorias/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Matemática",
+        "item": "https://profesordematematica.com.co/tutorias/matematica"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tutoría de Matemática",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Profesor de Matemática",
+        "image": "https://profesordematematica.com.co/assets/logos/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cara 48 # 46-08",
+          "addressLocality": "Itagüí",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      },
+      "description": "Tutorías especializadas de matemática para todos los niveles académicos."
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/tutorias/matematica">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Tutoría de matemática</h1>
+                    <p>Transformamos las matemáticas de una pesadilla a una herramienta lógica y sencilla.
+                        Acompañamiento experto para todos los niveles académicos.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-primary btn-glow" target="_blank">Solicitar
+                            Tutoría</a>
+                        <a href="#temas" class="btn btn-secondary">Ver Temas</a>
+                        <a href="./" class="btn btn-secondary">Ver Tutorías</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/tutoria-de-matematica-calculo-trigonometria.avif"
+                        alt="Profesor explicando derivadas e integrales de matemática">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Subjects Details -->
+        <section id="temas" class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Domina cualquier rama de la matemática</h2>
+                    <p>Cubrimos desde las bases fundamentales hasta los niveles más avanzados de ingeniería.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <div class="info-card-icon">🔢</div>
+                        <h3>Álgebra y Aritmética</h3>
+                        <p>Bases sólidas: despejes, factorización, polinomios y lógica numérica esencial.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📐</div>
+                        <h3>Trigonometría y Geometría</h3>
+                        <p>Identidades trigonométricas, teoremas de Euclides y geometría plana y del espacio.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🎢</div>
+                        <h3>Cálculo Diferencial e Integral</h3>
+                        <p>Límites, derivadas, integrales y aplicaciones prácticas para universitarios.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">♾️</div>
+                        <h3>Cálculo Multivariado</h3>
+                        <p>Derivadas parciales, integrales dobles y triples en coordenadas polares y esféricas.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🧩</div>
+                        <h3>Matemática Discreta</h3>
+                        <p>Lógica proposicional, teoría de conjuntos y grafos para carreras de sistemas.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">⚖️</div>
+                        <h3>Ecuaciones Diferenciales</h3>
+                        <p>Métodos de resolución para modelos físicos y de ingeniería avanzada.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Feature -->
+        <section class="section bg-soft border-bottom">
+            <div class="container split-layout">
+                <div class="split-image">
+                    <img src="../assets/img/metodologia-aprendizaje-matematica-ejercicios.avif"
+                        alt="Cuaderno con ejercicios de matemática resueltos">
+                </div>
+                <div class="split-text">
+                    <h2>Nuestra Metodología en Matemática</h2>
+                    <p>No creemos en la memorización de fórmulas. Nuestra tutoría se basa en que el estudiante entienda
+                        el **porqué** de cada paso. Utilizamos un enfoque de 3 fases:</p>
+                    <ul class="text-light list-none ml-2 mb-2">
+                        <li class="mb-1">**Conceptualización:** Explicación simple del fenómeno o
+                            regla lógica.</li>
+                        <li class="mb-1">**Resolución Guiada:** El profesor y el alumno resuelven
+                            problemas juntos.</li>
+                        <li class="mb-1">**Autonomía:** El estudiante resuelve ejercicios solo bajo
+                            supervisión técnica.</li>
+                    </ul>
+                    <p>Este método garantiza que el estudiante se sienta capaz de enfrentar el examen sin depender del
+                        profesor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Levels -->
+        <section class="section bg-deep">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preparación para todos los niveles</h2>
+                    <p>Adaptamos el lenguaje y la complejidad según el nivel del estudiante.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <h3>Bachillerato</h3>
+                        <p>Nivelación para exámenes bimestrales y preparación para pruebas de estado (ICFES).</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Pregrado</h3>
+                        <p>Apoyo en ciencias básicas para ingenierías, economía y administración.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Ingreso Universitario</h3>
+                        <p>Entrenamiento intensivo para exámenes de admisión de universidades públicas y privadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Specialization Section -->
+        <section class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text">
+                        <h2>Especialización en Ciencias Matemáticas</h2>
+                        <p>La matemática es el fundamento de todo el conocimiento científico y técnico. Nuestras
+                            tutorías están diseñadas para que el estudiante no solo aprenda a operar, sino a razonar
+                            lógicamente. Abordamos desde los conceptos básicos de álgebra hasta el cálculo avanzado,
+                            asegurando una base sólida para cualquier carrera profesional.</p>
+                        <p>Entendemos que cada estudiante enfrenta desafíos únicos: desde la complejidad de los teoremas
+                            de cálculo hasta la rigurosidad técnica de las pruebas de lógica. Por ello, nuestras
+                            sesiones no se limitan a la resolución mecánica de ejercicios; profundizamos en el
+                            <strong>porqué</strong> de cada procedimiento, asegurando que el alumno sea capaz de
+                            justificar sus resultados y defender sus conclusiones ante cualquier tribunal académico o
+                            entorno profesional.
+                        </p>
+                    </div>
+                    <div class="info-card mt-0">
+                        <h3 class="text-secondary mb-2">Portafolio Especializado</h3>
+                        <ul class="check-list text-light">
+                            <li><span class="check-icon">✓</span> Tutorías para Álgebra Lineal y Básica</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Cálculo Diferencial e Integral</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Trigonometría y Geometría</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Matemática Discreta</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Preparación de Exámenes de Admisión</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Resolución de Talleres y Guías</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Lógica Matemática</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Aplicaciones Prácticas de la Matemática
+                            </li>
+                            <li><span class="check-icon">✓</span> Tutorías para Olimpiadas Matemáticas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section bg-dark">
+            <div class="container text-center">
+                <h2>¿Tienes un examen pronto?</h2>
+                <p>No esperes a última hora. Una sesión de dos horas puede ser la diferencia entre pasar o repetir.</p>
+                <div class="mt-2">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow">Agendar mi Tutoría Ahora</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> Llamar
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn-float-whatsapp" target="_blank">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorías de Excel | Básico, Intermedio y Avanzado</title>
+    <meta name="description"
+        content="Servicio de tutoría de Excel a domicilio y online. Aprende fórmulas, tablas dinámicas, macros (VBA) y automatización para destacar en el mundo laboral.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tutorías",
+        "item": "https://profesordematematica.com.co/tutorias/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Excel",
+        "item": "https://profesordematematica.com.co/tutorias/excel"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tutorías de Excel",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Profesor de Matemática",
+        "image": "https://profesordematematica.com.co/assets/logos/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cara 48 # 46-08",
+          "addressLocality": "Itagüí",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      },
+      "description": "Capacitación en hojas de cálculo, fórmulas, tablas dinámicas y macros."
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/tutorias/excel">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Tutorías de Excel</h1>
+                    <p>La herramienta más poderosa del mundo empresarial al alcance de tu mano. Te enseñamos a dominar
+                        Excel desde cero hasta nivel experto para que seas el más productivo de tu equipo.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow" target="_blank">Empezar Mi Tutoría</a>
+                        <a href="#niveles" class="btn btn-secondary">Ver Niveles</a>
+                        <a href="./" class="btn btn-secondary">Ver Tutorías</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/tutoria-excel-avanzado-macros-dashboard.avif"
+                        alt="Pantalla mostrando tablero de control (Dashboard) profesional en Excel">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Levels Details -->
+        <section id="niveles" class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Domina Excel en todos sus niveles</h2>
+                    <p>Adaptamos el contenido a lo que realmente necesitas en tu vida diaria o profesional.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <div class="info-card-icon">📁</div>
+                        <h3>Excel Básico</h3>
+                        <p>Interfaz, formatos, operaciones básicas y las 10 funciones fundamentales para sobrevivir en
+                            la oficina.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">⚡</div>
+                        <h3>Excel Intermedio</h3>
+                        <p>Funciones lógicas (SI, Y, O), búsqueda (BUSCARV, INDICE/COINCIDIR) y validación de datos.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📊</div>
+                        <h3>Tablas Dinámicas</h3>
+                        <p>Análisis profundo de bases de datos, creación de reportes cruzados y segmentación de
+                            información.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🖥️</div>
+                        <h3>Dashboards</h3>
+                        <p>Creación de tableros de control visuales e interactivos para presentaciones de alto nivel.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">⚙️</div>
+                        <h3>Macros y VBA</h3>
+                        <p>Automatización de tareas repetitivas mediante grabadora de macros y lenguaje Visual Basic.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🔄</div>
+                        <h3>Power Query</h3>
+                        <p>Limpieza y transformación de datos automática desde múltiples fuentes externas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Impact -->
+        <section class="section bg-soft border-bottom">
+            <div class="container split-layout reverse">
+                <div class="split-text">
+                    <h2>Ahorre horas de trabajo semanal</h2>
+                    <p>¿Sigue copiando y pegando datos manualmente? En nuestras tutorías de Excel el objetivo principal
+                        es la **eficiencia**. Te enseñamos a construir archivos inteligentes que trabajen por ti.</p>
+                    <p>Un usuario promedio tarda 4 horas en un reporte que un alumno capacitado por nosotros resuelve en
+                        5 minutos. Ese es el valor real de nuestras sesiones personalizadas.</p>
+                </div>
+                <div class="split-image">
+                    <img src="../assets/img/eficiencia-trabajo-excel-oficina.avif"
+                        alt="Usuario de oficina ahorrando tiempo gracias a automatización en Excel">
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Profiles -->
+        <section class="section bg-deep">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Entrenamiento para la vida real</h2>
+                    <p>Servicio enfocado en resultados inmediatos.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <h3>Estudiantes</h3>
+                        <p>Manejo de bases de datos para trabajos académicos, tesis y laboratorios.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Profesionales</h3>
+                        <p>Actualización de habilidades para mejorar el perfil laboral y acceder a mejores cargos.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Empresas</h3>
+                        <p>Capacitación personalizada para equipos de trabajo que necesitan estandarizar procesos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Specialization Section -->
+        <section class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text">
+                        <h2>Productividad y Automatización con Excel</h2>
+                        <p>Excel es la herramienta estándar en el mundo laboral. Nuestras tutorías van desde lo
+                            fundamental hasta la creación de herramientas de automatización complejas. Te enseñamos a
+                            transformar datos crudos en dashboards inteligentes que hablen por sí mismos, optimizando tu
+                            tiempo y el de tu equipo.</p>
+                        <p>Entendemos que cada estudiante enfrenta desafíos únicos: desde la lógica de las funciones
+                            avanzadas hasta la complejidad de las macros y el modelamiento de datos. Por ello, nuestras
+                            sesiones no se limitan a seguir tutoriales; profundizamos en la <strong>lógica</strong> de
+                            cada herramienta, asegurando que el alumno sea capaz de construir soluciones a medida y
+                            defender sus reportes ante cualquier tribunal académico o entorno profesional.</p>
+                    </div>
+                    <div class="info-card mt-0">
+                        <h3 class="text-secondary mb-2">Portafolio Especializado</h3>
+                        <ul class="check-list text-light">
+                            <li><span class="check-icon">✓</span> Tutorías para Fórmulas y Funciones Avanzadas</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Tablas Dinámicas y Dashboards</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Automatización con Macros (VBA)</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Limpieza de Datos con Power Query</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Modelamiento de Datos con Power Pivot
+                            </li>
+                            <li><span class="check-icon">✓</span> Tutorías en Creación de Reportes Financieros</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Análisis de Datos Empresariales</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Excel para Pruebas Técnicas Laborales</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Aplicaciones de Ingeniería en Excel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section bg-gradient">
+            <div class="container text-center">
+                <h2 class="text-white">¿Te sientes intimidado por las fórmulas?</h2>
+                <p class="text-white opacity-9 mb-2">Pierde el miedo y convierte a Excel en
+                    tu mejor aliado.</p>
+                <div class="flex-center">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow">
+                        Contactar Instructor de Excel
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> Llamar
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn-float-whatsapp" target="_blank">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

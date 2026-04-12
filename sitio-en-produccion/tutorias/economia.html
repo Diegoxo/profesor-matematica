@@ -1,0 +1,330 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorías de economía | Microeconomía y Macroeconomía</title>
+    <meta name="description"
+        content="Servicio de tutoría de economía para universitarios. Domina la microeconomía, macroeconomía, teoría del mercado y modelos económicos con expertos.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tutorías",
+        "item": "https://profesordematematica.com.co/tutorias/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Economía",
+        "item": "https://profesordematematica.com.co/tutorias/economia"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tutorías de Economía",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Profesor de Matemática",
+        "image": "https://profesordematematica.com.co/assets/logos/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cara 48 # 46-08",
+          "addressLocality": "Itagüí",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      },
+      "description": "Apoyo en microeconomía, macroeconomía y teoría económica."
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/tutorias/economia">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="../clases/">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Tutorías de economía</h1>
+                    <p>Comprende los modelos que mueven el mundo. Te enseñamos a analizar el comportamiento de los
+                        mercados, los consumidores y las naciones desde un enfoque matemático y lógico.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow" target="_blank">Agendar Mi Tutoría</a>
+                        <a href="#contenidos" class="btn btn-secondary">Temas de Economía</a>
+                        <a href="./" class="btn btn-secondary">Ver Tutorías</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/tutoria-de-economia-micro-macro-mercados.avif"
+                        alt="Gráficos de oferta y demanda en una pantalla de análisis económico">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Subjects Details -->
+        <section id="contenidos" class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Especialización en Teoría del Mercado</h2>
+                    <p>Domina los conceptos fundamentales y avanzados de la ciencia económica.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <div class="info-card-icon">🛒</div>
+                        <h3>Microeconomía</h3>
+                        <p>Teoría del consumidor, curvas de indiferencia, elasticidades y teoría de la firma.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🌍</div>
+                        <h3>Macroeconomía</h3>
+                        <p>Cálculo del PIB, inflación, desempleo, modelos IS-LM y política fiscal/monetaria.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">⚖️</div>
+                        <h3>Econometría</h3>
+                        <p>Modelos de regresión aplicados a variables económicas y validación estadística.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🤝</div>
+                        <h3>Teoría de Juegos</h3>
+                        <p>Análisis de decisiones estratégicas, equilibrio de Nash y competencia imperfecta.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📈</div>
+                        <h3>Mercados y Precios</h3>
+                        <p>Monopolios, oligopolios, competencia perfecta y fallos del mercado.</p>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">💼</div>
+                        <h3>Economía de la Empresa</h3>
+                        <p>Optimización de costos, ingresos marginales y punto de equilibrio corporativo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Focus -->
+        <section class="section bg-soft border-bottom">
+            <div class="container split-layout">
+                <div class="split-image">
+                    <img src="../assets/img/analisis-economico-macroeconomia-graficos.avif"
+                        alt="Economista analizando tendencias de mercado global en computador">
+                </div>
+                <div class="split-text">
+                    <h2>La Economía no es solo Memoria</h2>
+                    <p>Muchos estudiantes fallan en economía porque intentan memorizar gráficas. En nuestras tutorías te
+                        enseñamos el **fundamento matemático** que hay detrás de cada movimiento en las curvas.</p>
+                    <p>Si entiendes la derivada de la utilidad o la lógica de la escasez, las gráficas se dibujan solas
+                        en tu mente. Te damos las herramientas para que analices cualquier entorno económico con
+                        criterio propio.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="section bg-deep">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Para quiénes es esta tutoría</h2>
+                    <p>Atención adaptada a tu carrera y objetivos.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card">
+                        <h3>Economistas</h3>
+                        <p>Apoyo en el rigor matemático necesario para las materias de núcleo profesional.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Negocios y Admin</h3>
+                        <p>Enfoque práctico en toma de decisiones y comprensión del entorno macro.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Derecho y Política</h3>
+                        <p>Explicación sencilla y clara de los modelos económicos para áreas no matemáticas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Specialization Section -->
+        <section class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-text">
+                        <h2>Análisis Económico y Modelamiento</h2>
+                        <p>Entender la economía requiere una mezcla de teoría social y precisión matemática. Te ayudamos
+                            a descifrar los mecanismos de los mercados, el comportamiento del consumidor y las políticas
+                            macroeconómicas. Enfocamos nuestras clases en el análisis crítico y la resolución de modelos
+                            econométricos para que tus trabajos tengan un impacto real.</p>
+                        <p>Entendemos que cada estudiante enfrenta desafíos únicos: desde la complejidad de los teoremas
+                            económicos hasta la rigurosidad técnica de los modelos matemáticos. Por ello, nuestras
+                            sesiones no se limitan a la memorización de teorías; profundizamos en el
+                            <strong>porqué</strong> de cada modelo, asegurando que el alumno sea capaz de interpretar
+                            sus resultados y defender sus conclusiones ante cualquier tribunal académico o entorno
+                            profesional.
+                        </p>
+                    </div>
+                    <div class="info-card mt-0">
+                        <h3 class="text-secondary mb-2">Portafolio Especializado</h3>
+                        <ul class="check-list text-light">
+                            <li><span class="check-icon">✓</span> Tutorías para Microeconomía y Macroeconomía</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Modelos Econométricos</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Teoría de Juegos</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Análisis de Mercados</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Política Económica</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Historia del Pensamiento Económico</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Evaluación de Impacto Económico</li>
+                            <li><span class="check-icon">✓</span> Tutorías en Manejo de Variables e Indicadores</li>
+                            <li><span class="check-icon">✓</span> Tutorías para Preparación de Certificaciones
+                                Económicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section bg-gradient">
+            <div class="container text-center">
+                <h2 class="text-white">¿Te confunden los modelos económicos?</h2>
+                <p class="text-white opacity-9 mb-2">Simplificamos la teoría para que
+                    obtengas los mejores resultados.</p>
+                <div class="flex-center">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow">
+                        Contactar Tutor de Economía
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> Llamar
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn-float-whatsapp" target="_blank">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

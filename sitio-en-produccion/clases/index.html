@@ -1,0 +1,407 @@
+<?php require_once __DIR__ . '/../php/logger.php'; log_visitor_activity(); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases a domicilio | Profesor de Matemática en tu hogar</title>
+    <meta name="description"
+        content="Recibe clases a domicilio personalizadas en matemáticas, física, estadística y programación. Evita desplazamientos y aprende en la comodidad de tu casa con expertos.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/layouts.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://profesordematematica.com.co/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Clases",
+        "item": "https://profesordematematica.com.co/clases/"
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Clases Particulares a Domicilio",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Profesor de Matemática",
+        "image": "https://profesordematematica.com.co/assets/logos/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cara 48 # 46-08",
+          "addressLocality": "Itagüí",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      },
+      "description": "Servicio de clases particulares a domicilio para estudiantes de todos los niveles en Colombia."
+    }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TSPMG889');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://profesordematematica.com.co/clases/">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSPMG889"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="../" class="brand-text">
+                    <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+
+            <div class="header-contacts desktop-only">
+                <a href="tel:3105986491" class="btn-sm btn-call-header">
+                    <img src="../assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-invert"> 310
+                    598 6491
+                </a>
+                <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+                    class="btn-sm btn-whatsapp-header" target="_blank">
+                    <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../profesor/">Profesor</a></li>
+                    <li><a href="./" class="active">Clases</a></li>
+                    <li><a href="../asesorias/">Asesorías</a></li>
+                    <li><a href="../materias/">Materias</a></li>
+                    <li><a href="../metodologia/">Metodología</a></li>
+                    <li><a href="../opiniones/">Opiniones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Clases a domicilio</h1>
+                    <p>La mejor educación personalizada llega directamente a tu puerta. Aprende matemáticas, física y
+                        estadística sin salir de casa, con horarios flexibles y un enfoque totalmente adaptado a tus
+                        necesidades.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-glow" target="_blank">Solicitar Clase</a>
+                        <a href="ciudades/" class="btn btn-secondary">Ver ciudades</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../assets/img/clases-particulares-a-domicilio-comodidad.avif"
+                        alt="Estudiante recibiendo clases particulares a domicilio con comodidad">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Materias Disponibles (Grid) -->
+        <section id="materias-clases" class="section bg-soft">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Materias que enseñamos a domicilio</h2>
+                    <p>Refuerzo experto en las asignaturas más exigentes del sistema educativo.</p>
+                </div>
+                <div class="grid-centered">
+                    <article class="info-card">
+                        <div class="info-card-icon">📐</div>
+                        <h3>Matemáticas</h3>
+                        <p>Desde aritmética básica hasta cálculo multivariable avanzado.</p>
+                        <a href="matematica" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📊</div>
+                        <h3>Estadística</h3>
+                        <p>Análisis de datos, probabilidad e inferencia para universitarios.</p>
+                        <a href="estadistica" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🍎</div>
+                        <h3>Física</h3>
+                        <p>Mecánica, electromagnetismo y cinemática explicada paso a paso.</p>
+                        <a href="fisica" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">💰</div>
+                        <h3>Finanzas</h3>
+                        <p>Dominio de matemáticas financieras y evaluación de proyectos.</p>
+                        <a href="matematica-financiera" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">⌨️</div>
+                        <h3>Excel</h3>
+                        <p>Capacitación práctica en hojas de cálculo y automatización.</p>
+                        <a href="excel" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🐍</div>
+                        <h3>Python</h3>
+                        <p>Programación y lógica de software desde la comodidad de tu PC.</p>
+                        <a href="python" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">📉</div>
+                        <h3>Economía</h3>
+                        <p>Micro y macroeconomía para entender los mercados.</p>
+                        <a href="economia" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">⚙️</div>
+                        <h3>Estática</h3>
+                        <p>Equilibrio de cuerpos y sistemas de fuerzas para ingeniería.</p>
+                        <a href="estatica" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🧠</div>
+                        <h3>Investigación de Operaciones</h3>
+                        <p>Modelos de optimización y logística para toma de decisiones.</p>
+                        <a href="investigacion-de-operaciones" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                    <article class="info-card">
+                        <div class="info-card-icon">🔬</div>
+                        <h3>Lenguaje R</h3>
+                        <p>Análisis de datos y computación estadística profesional.</p>
+                        <a href="r" class="text-primary">Detalles &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Beneficios de las Clases Domiciliarias -->
+        <section class="section bg-dark border-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>¿Por qué elegir clases en casa?</h2>
+                    <p>Optimiza tu tiempo y mejora tu concentración en un ambiente conocido.</p>
+                </div>
+                <div class="grid-centered grid-mobile-1">
+                    <div class="info-card">
+                        <div class="info-card-icon">🏠</div>
+                        <h3>Comodidad Total</h3>
+                        <p>Evita el tráfico y el estrés de los desplazamientos. Nosotros nos encargamos de llegar a tu
+                            ubicación puntualmente.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">🧘</div>
+                        <h3>Mejor Concentración</h3>
+                        <p>En tu propio espacio te sientes más seguro para preguntar y profundizar en los temas que más
+                            te cuestan.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">📅</div>
+                        <h3>Flexibilidad Horaria</h3>
+                        <p>Acordamos las sesiones en el horario que mejor se adapte a tu rutina escolar o universitaria.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Metodología de Enseñanza -->
+        <section class="section bg-deep border-top">
+            <div class="container split-layout">
+                <div class="split-image">
+                    <img src="../assets/img/metodologia-aprendizaje-personalizado.avif"
+                        alt="Profesor explicando matemáticas con metodología personalizada a domicilio">
+                </div>
+                <div class="split-text">
+                    <h2>Nuestra Metodología en Casa</h2>
+                    <p>Nuestras <strong>clases particulares a domicilio</strong> no son simples sesiones de resolución
+                        de dudas; son procesos pedagógicos estructurados. Identificamos los vacíos de conocimiento desde
+                        la primera sesión y diseñamos un plan de choque inmediato.</p>
+                    <p>Utilizamos ejemplos prácticos y materiales didácticos que facilitan la comprensión de conceptos
+                        abstractos, logrando que el estudiante no solo aprenda para el examen, sino que integre el
+                        conocimiento de forma duradera.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Personalización del Servicio -->
+        <section class="section bg-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Adaptabilidad al 100%</h2>
+                    <p>Cada estudiante es un mundo, y nuestras clases lo reflejan.</p>
+                </div>
+                <div class="grid-centered">
+                    <div class="info-card card-glass">
+                        <h3>Nivel Escolar</h3>
+                        <p>Refuerzo para niños y jóvenes de primaria y bachillerato, preparando el camino al éxito
+                            universitario.</p>
+                    </div>
+                    <div class="info-card card-glass">
+                        <h3>Nivel Universitario</h3>
+                        <p>Soporte especializado para materias de ingeniería, administración y ciencias básicas.</p>
+                    </div>
+                    <div class="info-card card-glass">
+                        <h3>Preparación Exámenes</h3>
+                        <p>Entrenamiento intensivo para pruebas de Estado, admisión y parciales críticos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Resultados Garantizados -->
+        <section class="section bg-soft border-bottom">
+            <div class="container split-layout reverse">
+                <div class="split-text">
+                    <h2>Resultados que se Note en tus Notas</h2>
+                    <p>El impacto de recibir una <strong>clase personalizada a domicilio</strong> es inmediato. Al
+                        eliminar las distracciones del aula y contar con la atención exclusiva de un experto, el avance
+                        académico que se logra en un par de horas equivale a días de estudio grupal.</p>
+                    <p>Nuestros estudiantes reportan una mejora significativa en su confianza y autonomía, lo que se
+                        traduce directamente en mejores calificaciones y una reducción del estrés académico frente a las
+                        materias numéricas.</p>
+                </div>
+                <div class="split-image">
+                    <img src="../assets/img/estudiante-exitoso-clases-domicilio.avif"
+                        alt="Estudiante celebrando buenos resultados académicos tras recibir clases domiciliarias">
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Cobertura y Localización -->
+        <section class="section bg-gradient">
+            <div class="container text-center">
+                <h2 class="text-white">Llegamos a donde estés</h2>
+                <p class="text-white opacity-9">Contamos con una amplia red de cobertura para brindar el servicio
+                    presencial.</p>
+                <div class="grid-centered">
+                    <div class="info-card card-glass">
+                        <h3 class="text-white">Medellín y Área Metropolitana</h3>
+                        <p class="text-white">Envigado, Itagüí, Sabaneta, La Estrella y más.</p>
+                    </div>
+                    <div class="info-card card-glass">
+                        <h3 class="text-white">Principales Capitales</h3>
+                        <p class="text-white">Bogotá, Cali, Barranquilla, Pereira, Manizales y Armenia.</p>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <a href="ciudades/" class="btn btn-secondary">Ver todas las ciudades</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Confianza y Seguridad -->
+        <section class="section bg-dark border-bottom">
+            <div class="container split-layout">
+                <div class="split-image">
+                    <img src="../assets/img/seguridad-y-confianza-clases-particulares.avif"
+                        alt="Padres de familia confiando en el servicio de profesor de matemática a domicilio">
+                </div>
+                <div class="split-text">
+                    <h2>Tu Tranquilidad es lo Primero</h2>
+                    <p>Sabemos que la seguridad en el hogar es fundamental. Por ello, todos nuestros docentes pasan por
+                        un riguroso proceso de selección y verificación de antecedentes, garantizando no solo calidad
+                        académica, sino un comportamiento ético y profesional intachable.</p>
+                    <p>Miles de familias en toda Colombia confían en nosotros para el acompañamiento de sus hijos,
+                        convirtiéndonos en el referente número uno de <strong>clases particulares seguras y
+                            efectivas</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CTA Final Section -->
+        <section class="section">
+            <div class="container text-center">
+                <h2>Empieza a mejorar hoy mismo</h2>
+                <p>No dejes que los temas se acumulen. Agenda tu clase a domicilio y domina la materia.</p>
+                <div class="mt-2">
+                    <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores" class="btn btn-primary">Agendar por WhatsApp</a>
+                    <a href="../contacto/" class="btn btn-secondary">Solicitar Información</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../" class="footer-brand brand-text">
+                        <img src="../assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../profesor/">Profesor Particular</a></li>
+                        <li><a href="../clases/">Clases a Domicilio</a></li>
+                        <li><a href="../asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="../preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="../contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call" aria-label="Llamar ahora">
+            <img src="../assets/icons/phone.svg" alt="Teléfono"
+                class="contact-icon contact-icon-lg contact-icon-invert"> 310 598 6491
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+            class="btn-float-whatsapp" target="_blank" aria-label="Chat en WhatsApp">
+            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg"> WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>

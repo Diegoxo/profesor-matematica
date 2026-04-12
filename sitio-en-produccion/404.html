@@ -1,0 +1,132 @@
+<?php require_once __DIR__ . '/./php/logger.php'; log_visitor_activity(404, "Página no encontrada (404)"); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página no encontrada | Profesor de Matemática</title>
+    <meta name="description"
+        content="La página que buscas no existe. Vuelve al inicio para encontrar a tu profesor de matemática ideal.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logos/logo-favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/layouts.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="/" class="brand-text">
+                    <img src="/assets/logos/logo.svg" alt="Logo Profesor de Matemática" class="logo-img">
+                    Profesor de <span>Matemática</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/contacto/">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Not Found Section -->
+        <section class="section bg-dark">
+            <div class="container text-center" style="padding: 100px 20px;">
+                <h1 class="text-secondary" style="font-size: clamp(5rem, 15vw, 10rem); margin-bottom: 0;">404</h1>
+                <h2 style="margin-top: -20px;">Has llegado a una variable desconocida</h2>
+                <p class="text-light" style="max-width: 600px; margin: 2rem auto;">
+                    La página que buscas parece haber sido despejada de la ecuación o nunca existió.
+                    No te preocupes, resolver problemas es nuestra especialidad.
+                </p>
+                <div class="cta-actions" style="margin-top: 3rem;">
+                    <a href="/" class="btn btn-primary btn-glow">Volver al Inicio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subjects Quick Links -->
+        <section class="section bg-soft border-top">
+            <div class="container text-center">
+                <h3>¿Buscas alguna materia en específico?</h3>
+                <div class="grid-centered" style="margin-top: 2rem;">
+                    <a href="/materias/matematica" class="info-card card-glass" style="text-decoration: none;">
+                        <h4>Matemática</h4>
+                    </a>
+                    <a href="/materias/estadistica" class="info-card card-glass" style="text-decoration: none;">
+                        <h4>Estadística</h4>
+                    </a>
+                    <a href="/materias/fisica" class="info-card card-glass" style="text-decoration: none;">
+                        <h4>Física</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="footer-brand brand-text">
+                        <img src="/assets/logos/logo.svg" alt="Logo Profesor de Matemática">
+                        <span>Profesor de <span class="text-secondary">Matemática</span></span>
+                    </a>
+                    <p>
+                        Servicios profesionales de tutoría y asesoría académica en Colombia. Calidad y compromiso con tu
+                        aprendizaje.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="/profesor/">Profesor Particular</a></li>
+                        <li><a href="/clases/">Clases a Domicilio</a></li>
+                        <li><a href="/asesorias/">Asesorías Académicas</a></li>
+                        <li><a href="/preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li><a href="/contacto/">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Cra 48 # 46-08, Itagüí, Antioquia</li>
+                        <li>📱 <a href="tel:3105986491">310 598 6491</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Designed and developed by Profesor de matemática</p>
+                <p>&copy; 2025 Profesor de Matemática. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating Actions -->
+    <div class="floating-actions">
+        <a href="tel:3105986491" class="btn-float-call" aria-label="Llamar ahora">
+            <img src="/assets/icons/phone.svg" alt="Teléfono" class="contact-icon contact-icon-lg contact-icon-invert">
+            310 598 6491
+        </a>
+        <a href="https://wa.me/573105986491?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20profesores"
+            class="btn-float-whatsapp" target="_blank" aria-label="Chat en WhatsApp">
+            <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" class="contact-icon contact-icon-lg">
+            WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>
